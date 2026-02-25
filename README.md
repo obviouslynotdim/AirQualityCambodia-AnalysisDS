@@ -75,14 +75,9 @@ Data is collected from [OpenAQ](https://openaq.org/) and processed using **Pytho
 
 ## 👨‍💻 Team Members
 
-| Name |
-|------|
-| Kuy Poly |
-| Chhorn Norakjed |
-| Sophal Chanrat |
-| Te Chhenghab |
-| Hak Kimly |
-| Sao Sethavathanak |
+| Kuy Poly        | Chhorn Norakjed   | Sophal Chanrat    |
+|-----------------|-----------------|-----------------|
+| Te Chhenghab    | Hak Kimly        | Sao Sethavathanak|
 
 ---
 
@@ -118,7 +113,8 @@ cambodia-air-quality-analysis/
 │
 ├── data/                 # Raw air quality datasets
 ├── notebooks/            # Jupyter notebooks
-│   └── 01_air_quality_analysis.ipynb
+│   └── 01_air_quality_analysis.ipynb (Testing)
+│   └── air_quality_analysis.ipynb (Main)
 ├── README.md             # Project overview & instructions
 ├── requirements.txt      # Python dependencies
 └── .gitignore            # Ignore system files
