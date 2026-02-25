@@ -140,6 +140,5 @@ cambodia-air-quality-analysis/
 <p align="center">
   🌫️ Turning Data Into Environmental Insight 🌿
 </p>
-```
 
 ---
