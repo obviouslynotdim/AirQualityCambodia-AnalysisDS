@@ -77,7 +77,7 @@ Data is collected from [OpenAQ](https://openaq.org/) and processed using **Pytho
 
 | Kuy Poly        | Chhorn Norakjed   | Sophal Chanrat    |
 |-----------------|-----------------|-----------------|
-| Te Chhenghab    | Hak Kimly        | Sao Sethavathanak|
+| **Te Chhenghab**    | **Hak Kimly**        | **Sao Sethavathanak**|
 
 ---
 
