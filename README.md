@@ -11,87 +11,91 @@ Bachelor of Computer Science
   <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python">
   <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-orange?style=for-the-badge&logo=pandas">
   <img src="https://img.shields.io/badge/Matplotlib-Visualization-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Cambodia%20Open%20Data-Government-purple?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Open--Meteo-Weather%20API-purple?style=for-the-badge">
 </p>
 
 ---
 
 # 📌 Project Overview
 
-This project analyzes **weather and environmental data in Cambodia** to understand patterns and trends that can support **weather forecasting analysis**.
+This project analyzes **weather data in Cambodia** using the **Open-Meteo API** to understand climate patterns and support **weather forecasting analysis**.
 
-The dataset is obtained from the official Cambodia government open data portal and processed using **Python**, **Pandas**, and **Matplotlib**.
+Instead of static datasets, this project dynamically collects **historical weather data** using API requests and processes it with **Python, Pandas, and Matplotlib**.
 
-The objective is to transform raw weather data into **useful insights about climate patterns and potential forecasting trends**.
+The goal is to transform raw API data into **insightful climate trends and forecasting indicators**.
 
 ---
 
 # 🎯 Objectives
 
-* Collect and clean weather-related data from Cambodia open data portal
-* Analyze environmental indicators such as **temperature, humidity, and air conditions**
+* Collect historical weather data using Open-Meteo API
+* Analyze key indicators such as:
+  - Temperature (max/min)
+  - Rainfall
+  - Wind speed
 * Identify **weather trends over time**
-* Visualize climate patterns using data visualization techniques
-* Provide insights that may help support **basic weather forecasting analysis**
+* Visualize climate patterns
+* Support **basic forecasting insights**
 
 ---
 
 # 🌎 Data Source
 
-Dataset from the Cambodia Government Open Data Portal:
+Data is collected from:
 
-* **Dataset:** Cambodia Weather / Environmental Data
-* **Provider:** Ministry of Economy and Finance (MEF)
-* **Portal:** [https://data.mef.gov.kh](https://data.mef.gov.kh)
-* **Dataset Link:**
-  [https://data.mef.gov.kh/datasets/pd_66a0cd503e0bd300012638fb5](https://data.mef.gov.kh/datasets/pd_66a0cd503e0bd300012638fb5)
-
-The dataset contains environmental monitoring information such as:
-
-* Weather measurements
-* Monitoring station locations
-* Date and time of observations
-* Environmental indicators
+* **API:** Open-Meteo Weather API  
+* **Website:** https://open-meteo.com/  
+* **Type:** Historical weather data (archive API)
 
 ---
 
 # 🧠 Methodology
 
-## 1️⃣ Data Preprocessing
+## 1️⃣ Data Collection (API)
 
-* Remove missing or incorrect values
-* Standardize column formats
-* Convert timestamps into datetime format
-* Extract **Year, Month, Day** for time-based analysis
-
----
-
-## 2️⃣ Exploratory Data Analysis (EDA)
-
-* Analyze distribution of weather variables
-* Identify patterns and trends over time
-* Compare weather conditions across different periods
-* Detect unusual climate patterns
+* Fetch data using `requests`
+* Loop through multiple Cambodian provinces
+* Collect daily weather data:
+  - Temperature (max/min)
+  - Rainfall
+  - Wind speed
 
 ---
 
-## 3️⃣ Visualization
+## 2️⃣ Data Preprocessing
 
-Visualizations created using **Matplotlib** include:
+* Combine data from all provinces
+* Rename columns for clarity
+* Convert date to datetime format
+* Handle missing values if needed
 
-* Weather trend over time
-* Monthly and daily averages
-* Distribution of environmental indicators
-* Pattern comparison charts
+---
+
+## 3️⃣ Exploratory Data Analysis (EDA)
+
+* Analyze weather trends over time
+* Compare provinces
+* Detect unusual patterns
+
+---
+
+## 4️⃣ Visualization
+
+Using **Matplotlib**:
+
+* Temperature trends
+* Rainfall patterns
+* Monthly averages
+* Province comparisons
 
 ---
 
 # 📊 Expected Outcomes
 
-* Identify **weather patterns and climate trends**
-* Understand seasonal environmental changes
-* Provide **visual insights into weather behavior in Cambodia**
-* Demonstrate a **data science workflow from raw data to analysis**
+* Understand **climate patterns in Cambodia**
+* Identify **seasonal trends**
+* Provide **visual insights for forecasting**
+* Demonstrate real-world **API-based data science workflow**
 
 ---
 
@@ -110,7 +114,7 @@ Visualizations created using **Matplotlib** include:
 ```bash
 git clone https://github.com/your-username/cambodia-weather-forecast-analysis.git
 cd cambodia-weather-forecast-analysis
-```
+````
 
 ### 2️⃣ Install dependencies
 
@@ -118,19 +122,27 @@ cd cambodia-weather-forecast-analysis
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run Jupyter Notebook
+### 3️⃣ Fetch Data
+
+Run your data collection script:
+
+```bash
+python fetch_weather.py
+```
+
+---
+
+### 4️⃣ Run Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-### 4️⃣ Open the notebook
+Open:
 
 ```
 notebooks/weather_forecast_analysis.ipynb
 ```
-
-Run all cells to perform the full analysis.
 
 ---
 
@@ -139,13 +151,12 @@ Run all cells to perform the full analysis.
 ```
 cambodia-weather-forecast-analysis/
 │
-├── data/                 # Weather datasets from Cambodia Open Data Portal
-├── notebooks/            # Jupyter notebooks for analysis
-│   ├── 01_weather_forecast_analysis.ipynb
-│   └── weather_forecast_analysis.ipynb
+├── data/                 # Generated weather dataset (CSV)
+├── scripts/              # API data collection scripts
+├── notebooks/            # Jupyter notebooks
 │
-├── README.md             # Project documentation
-├── requirements.txt      # Python dependencies
+├── README.md
+├── requirements.txt
 └── .gitignore
 ```
 
@@ -153,14 +164,14 @@ cambodia-weather-forecast-analysis/
 
 # 🌟 Features
 
-* ✅ Government open data dataset
-* ✅ Data cleaning and preprocessing pipeline
-* ✅ Exploratory Data Analysis (EDA)
-* ✅ Weather trend visualization
-* ✅ Clear and reproducible data science workflow
+* ✅ Real-time API-based data collection
+* ✅ Multi-province Cambodia dataset
+* ✅ Automated data pipeline
+* ✅ EDA + visualization
+* ✅ Forecast-ready dataset
 
 ---
 
 <p align="center">
-🌦️ Turning Weather Data Into Climate Insights 🌍
+🌦️ From API Data to Climate Insights 🌍
 </p>
