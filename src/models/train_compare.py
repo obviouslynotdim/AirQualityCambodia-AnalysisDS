@@ -16,10 +16,12 @@ from src.utils.config import COMPARE_METADATA_PATH, DATASET_PATH, MODEL_REGISTRY
 
 
 def _evaluate(y_true, y_pred) -> dict:
+    r2 = float(r2_score(y_true, y_pred))
     return {
         "mae": float(mean_absolute_error(y_true, y_pred)),
         "rmse": float(mean_squared_error(y_true, y_pred) ** 0.5),
-        "r2": float(r2_score(y_true, y_pred)),
+        "r2": r2,
+        "final_test_accuracy": r2 * 100,
     }
 
 

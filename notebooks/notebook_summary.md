@@ -21,11 +21,11 @@
 ## Model Results
 Source: artifacts/preprocessors/model_comparison_metadata.json
 
-| Model | RMSE | MAE | R2 | Train Rows | Test Rows |
-|---|---:|---:|---:|---:|---:|
-| Random Forest | 1.1331 | 0.8590 | 0.8624 | 16,456 | 4,114 |
-| Decision Tree | 1.4806 | 1.1036 | 0.7650 | 16,456 | 4,114 |
-| Linear Regression | 1.5369 | 1.1926 | 0.7468 | 16,456 | 4,114 |
+| Model | RMSE | MAE | R2 | Final Test Accuracy (%) | Train Rows | Test Rows |
+|---|---:|---:|---:|---:|---:|---:|
+| Random Forest | 1.1331 | 0.8590 | 0.8624 | 86.24 | 16,456 | 4,114 |
+| Decision Tree | 1.4806 | 1.1036 | 0.7650 | 76.50 | 16,456 | 4,114 |
+| Linear Regression | 1.5369 | 1.1926 | 0.7468 | 74.68 | 16,456 | 4,114 |
 
 Best model by RMSE: Random Forest
 
