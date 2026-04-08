@@ -5,7 +5,7 @@
 - Unified training flow across:
 	- notebooks/random_forest/random_forest.ipynb
 	- notebooks/linear_regression/linear_regression.ipynb
-	- notebooks/decision_tree/dicision_tree.ipynb
+	- notebooks/decision_tree/decision_tree.ipynb
 - Filled model analysis notebooks with executed metrics and feature insights
 - Kept model comparison notebook focused on comparison table + charts
 - Added key EDA visualizations

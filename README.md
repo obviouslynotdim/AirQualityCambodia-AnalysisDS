@@ -19,7 +19,7 @@ Bachelor of Computer Science
 
 ## 📌 Project Overview
 
-This project analyzes Cambodia weather patterns from Open-Meteo data and builds a three-model regression comparison pipeline for next-day maximum temperature prediction.
+This project analyzes Cambodia weather patterns from Open-Meteo data and builds a three-model regression comparison pipeline for maximum temperature prediction based on user-selected date and weather inputs.
 
 The workflow includes:
 - API-based historical weather collection
@@ -82,12 +82,12 @@ The workflow includes:
 
 Main notebooks:
 - notebooks/eda.ipynb
-- notebooks/weather_forecast_analysis.ipynb
 - notebooks/model_comparisons.ipynb
+- notebooks/model_diagnostics.ipynb
 
 Model training notebooks:
 - notebooks/linear_regression/linear_regression.ipynb
-- notebooks/decision_tree/dicision_tree.ipynb
+- notebooks/decision_tree/decision_tree.ipynb
 - notebooks/random_forest/random_forest.ipynb
 
 Model analysis notebooks:
@@ -96,7 +96,7 @@ Model analysis notebooks:
 - notebooks/random_forest/random_forest_analysis.ipynb
 
 Notebook summary:
-- NOTEBOOK_ANALYSIS.md
+- notebooks/notebook_summary.md
 
 ---
 
@@ -199,14 +199,16 @@ WeatherForecast-AnalysisDS/
 │   ├── random_forest/
 │   ├── eda.ipynb
 │   ├── model_comparisons.ipynb
-│   └── weather_forecast_analysis.ipynb
+│   ├── model_diagnostics.ipynb
+│   └── notebook_summary.md
+├── docs/
+│   ├── DSForecast-Report.pdf
+│   └── project_presentation_guide.md
 ├── src/
 │   ├── data/
 │   ├── models/
 │   └── utils/
 ├── tests/
-├── MODEL_ANALYSIS.md
-├── NOTEBOOK_ANALYSIS.md
 ├── README.md
 └── requirements.txt
 ```
